@@ -1,0 +1,23 @@
+<h1>Sign Up for Reddit you won't regret it!</h1>
+
+<form action="/users" method="post">
+  <input
+    type="hidden"
+    name="authenticity_token"
+    value="<%= form_authenticity_token %>">
+
+<p>
+  <label>Username
+    <input type="text" name="user[username]"value=" <%= flash[:username] %>" >
+  </label>
+</p>
+
+<p>
+  <label>Password
+    <input type="password" name="user[password]">
+  </label>
+</p>
+
+<input type="submit">
+
+</form>
